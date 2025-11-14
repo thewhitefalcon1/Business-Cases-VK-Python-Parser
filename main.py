@@ -18,7 +18,7 @@ for card in cards:
     relative_link = card.get("href")   
     title = card.get_text(strip=True)   
     true_link = urljoin(url, relative_link)
-    a = {'Название кейса': title[10:] , 'Дата публикации': title[:10git ] , 'Ссылка': true_link}
+    a = {'Название кейса': title[10:] , 'Дата публикации': title[:10 ] , 'Ссылка': true_link}
     cases_massive.append(a)
 
 for i, case in enumerate(cases_massive, start=1):
